@@ -1,0 +1,120 @@
+.firstText{
+			
+}
+.socialIcnWrap{
+	font-size: 40px;
+}
+.socialIcn a img {
+	width: 76px;
+}
+
+a.socialIcnA {
+	margin: 0 15px;
+	border: 0;
+}
+.classForIndex{
+	text-align: center; 
+	padding: 350px 35px;
+	font: 50px Helvetica, sans-serif; 
+	color: #333;
+}
+
+h1 { 
+	font-size: 40px; 
+}
+
+article { 
+	display: block;
+	text-align: left;
+	width: 650px;
+	margin: 0 auto;
+}
+a { 
+	color: #dc8100; 
+	text-decoration: none;
+}
+a:hover {
+	color: #333; 
+	text-decoration: none;
+}
+
+/**
+*Second page
+*/
+
+.classForSecond {
+	text-align: center; 
+	padding: 35px;
+	font: 20px Helvetica, sans-serif; 
+	color: #333;
+}
+
+.classForSecond .bg {
+  /* The image used */
+  background-image: url("../images/img-bg.jpg");
+
+  /* Full height */
+  min-height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+p.thought {
+  position: absolute;
+  width: 302px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: rgb(255 106 0 / 17%);
+  border: 8px solid #666;
+  -webkit-border-radius: 58px;
+  -moz-border-radius: 58px;
+  border-radius: 58px;
+  -webkit-box-shadow: 24px 12px 4px #888;
+  -moz-box-shadow: 24px 12px 4px #888;
+  box-shadow: 24px 12px 4px #888;
+  left:1048px;
+  margin: 496px auto;
+  color: #a82628;
+}
+
+
+a.clickHereSec {
+	color: black;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) { 
+	p.thought {
+	  position: absolute;
+	  width: 302px;
+	  height: 100px;
+	  text-align: center;
+	  line-height: 100px;
+	  background-color: rgb(255 106 0 / 17%);
+	  border: 8px solid #666;
+	  -webkit-border-radius: 58px;
+	  -moz-border-radius: 58px;
+	  border-radius: 58px;
+	  -webkit-box-shadow: 24px 12px 4px #888;
+	  -moz-box-shadow: 24px 12px 4px #888;
+	  box-shadow: 24px 12px 4px #888;
+	  margin: 60px auto;
+	  left:676px;
+	  top:1200px;
+	  color: #a82628;
+	}
+}
