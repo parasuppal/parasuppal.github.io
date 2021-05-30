@@ -122,8 +122,12 @@ function grocerySave(){
 	//for(var i = 1; i <= 2; i ++) {
 		//doc.text(20, 30 + (i * 10), i + ' x ' + multiplier + ' = ___');
 	//}
-	
-	doc.text(20,20,'Grocery List:');
+	var today = new Date();
+
+	var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+	//console.log("date::"+date);
+	doc.text(20,20,'Grocery List - '+date);
+	doc.text(20,30,'This is a PDF, you may save it to share.');
 	for(var i=1;i<=2;i++){
 		if(document.querySelector('input[name="row-'+i+'"]:checked')!=null){
 			var selectedMeasure = document.querySelector('input[name="row-'+i+'"]:checked').value;
@@ -133,13 +137,24 @@ function grocerySave(){
 				 totalQty = 1;
 			 }
 			 var grocName = document.querySelector('td[name="row-'+i+'-groc"]').innerText
-			doc.text(20, 30 + (i * 10), grocName + ' : ' + selectedMeasure + ' - ' + totalQty );	 
+			doc.text(20, 40 + (i * 10), grocName + ' : ' + selectedMeasure + ' - ' + totalQty );	 
 		} 
 	}
+	
 	doc.save('GroceryList.pdf');
 }
 
-
+function addClass(el, className) {
+    var el = document.querySelectorAll(el);
+    
+    for (i = 0; i < el.length; i++) {
+      if (el.classList) {
+        el[i].classList.add(className);
+      } else {
+        el[i].className += ' ' + className;
+      }
+    }
+}
 
 
 
