@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Grocery page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/common.js"></script>
+	<link rel="stylesheet" href="css/common.css">
+  </head>
+  <body class="classForIndex">
+	<div class="firstText grocTable">
+		<p>
+		
+		Grocery List:
+		<table class="grocTableRadio">
+		<tr>
+			<th></th>
+			<th>250g</th>
+			<th>500g</th>
+			<th>1kg</th>
+			<th>Qty</th>
+		</tr>
+		<tr>
+			<td>Arhar Dal</td>
+			<td><input type="radio" name="row-1" data-col="1" value="250g"></td>
+			<td><input type="radio" name="row-1" data-col="2" value="500g"></td>
+			<td><input type="radio" name="row-1" data-col="3" value="1kg"></td>
+			<td><input type="input" name="row-1" data-col="4"></td>
+		</tr>
+		<tr>
+			<td>Chana Dal</td>
+			<td><input type="radio" name="row-2" data-col="1" value="250g"></td>
+			<td><input type="radio" name="row-2" data-col="2" value="500g"></td>
+			<td><input type="radio" name="row-2" data-col="3" value="1kg"></td>
+			<td><input type="input" name="row-2" data-col="4" id="row-2-4"></td>
+		</tr>
+		
+		</table>
+		
+		<button type="submit" class="grocButton" onclick="javaScript:grocerySave()">Save</button>
+
+	    
+		<p>
+	</div>
+  </body>
+</html>
