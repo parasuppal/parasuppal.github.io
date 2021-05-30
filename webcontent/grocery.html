@@ -4,6 +4,8 @@
     <title>Grocery page</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/common.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
 	<link rel="stylesheet" href="css/common.css">
   </head>
   <body class="classForIndex">
@@ -20,14 +22,14 @@
 			<th>Qty</th>
 		</tr>
 		<tr>
-			<td>Arhar Dal</td>
+			<td name="row-1-groc">Arhar Dal</td>
 			<td><input type="radio" name="row-1" data-col="1" value="250g"></td>
 			<td><input type="radio" name="row-1" data-col="2" value="500g"></td>
 			<td><input type="radio" name="row-1" data-col="3" value="1kg"></td>
-			<td><input type="input" name="row-1" data-col="4"></td>
+			<td><input type="input" name="row-1" data-col="4" id="row-1-4"></td>
 		</tr>
 		<tr>
-			<td>Chana Dal</td>
+			<td name="row-2-groc">Chana Dal</td>
 			<td><input type="radio" name="row-2" data-col="1" value="250g"></td>
 			<td><input type="radio" name="row-2" data-col="2" value="500g"></td>
 			<td><input type="radio" name="row-2" data-col="3" value="1kg"></td>

@@ -100,7 +100,7 @@ function userAction(pcode,dateF){
 
 
 function grocerySave(){
-	for(var i=1;i<=2;i++){
+	/*for(var i=1;i<=2;i++){
 		if(document.querySelector('input[name="row-'+i+'"]:checked')!=null){
 			var selectedMeasure = document.querySelector('input[name="row-'+i+'"]:checked').value;
 			var totalQty = document.querySelectorAll('input[data-col="4"]')[i-1].value;
@@ -108,9 +108,35 @@ function grocerySave(){
 				 document.getElementById("row-2-4").value = "1";
 			 }
 		} 
-	}
+	}*/
 	
-	window.print();
+	//window.print();
+	//var name = prompt('What is your name?');
+	//var multiplier = prompt('Enter a number:');
+	//multiplier = parseInt(multiplier);
+	var doc = new jsPDF();
+	
+	//doc.text(20,20,name+'\'s Grocery List:');
+	//doc.addPage();
+	
+	//for(var i = 1; i <= 2; i ++) {
+		//doc.text(20, 30 + (i * 10), i + ' x ' + multiplier + ' = ___');
+	//}
+	
+	doc.text(20,20,'Grocery List:');
+	for(var i=1;i<=2;i++){
+		if(document.querySelector('input[name="row-'+i+'"]:checked')!=null){
+			var selectedMeasure = document.querySelector('input[name="row-'+i+'"]:checked').value;
+			var totalQty = document.querySelectorAll('input[data-col="4"]')[i-1].value;
+			 if(totalQty==""){
+				 document.getElementById("row-"+i+"-4").value = "1";
+				 totalQty = 1;
+			 }
+			 var grocName = document.querySelector('td[name="row-'+i+'-groc"]').innerText
+			doc.text(20, 30 + (i * 10), grocName + ' : ' + selectedMeasure + ' - ' + totalQty );	 
+		} 
+	}
+	doc.save('GroceryList.pdf');
 }
 
 
