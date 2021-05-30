@@ -127,7 +127,7 @@ function grocerySave(){
 	var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
 	//console.log("date::"+date);
 	doc.text(20,20,'Grocery List - '+date);
-	doc.text(20,30,'This is a PDF, you may save it to share.');
+	doc.text(20,30,'This is a PDF, on Safari you can use the share option to share it, and on Android you need to save it first to share.');
 	for(var i=1;i<=2;i++){
 		if(document.querySelector('input[name="row-'+i+'"]:checked')!=null){
 			var selectedMeasure = document.querySelector('input[name="row-'+i+'"]:checked').value;
