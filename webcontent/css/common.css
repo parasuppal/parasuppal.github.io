@@ -154,7 +154,7 @@ a.clickHereSec {
     height: 3em;
 }
 
-.grocTableRadio input[type="input" i]{
+.grocTableRadio input[type="text" i]{
     width: 20%;
     height: 30px;
     padding: 16px;
